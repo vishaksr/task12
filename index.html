@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAILWAY TICKET BOOKING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="head">RAILWAY TICKTET RESERVATION SYSTEM</h1>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html" id="onclick">HOME</a></li>
+               <li><a href="holiday.html">HOLIDAYS PACKAGE</a></li>
+                <li><a href="service.html" >SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="booking">
+            <section>
+               <h2 class="head1">BOOK</h2>
+               <h2 class="head1">YOUR</h2>
+               <h2 class="head1">TICKET </h2>
+               <h2 class="head1">HERE</h2>
+               <form>
+                <ul>
+                    <b class="fsize">Name<input type="text" placeholder="your name"></b><br>
+                    <b class="fsize">from<input type="text" placeholder="From [STN CODE]"></b><br><br>
+                    <b class="fsize">To <input type="text" placeholder="To [STN CODE]"></b><br><br>
+                    <b class="fsize">aadhar card <input type="text" placeholder="aadhar card no"></b><br>
+                    <b class="fsize">Date <input type="Date" placeholder="dd-mm-yy"></b><br><br>
+                    <label class="fsize"><strong>class</strong></label>
+                    <select id="class" name="class">
+                        <option value="select">SELECT</option>
+                        <option vlaue="1AC">1AC</option>
+                        <option vlaue="2AC">2AC</option>
+                        <option vlaue="3AC">3AC</option>
+                    </select>
+                        <select id="class" name="class">
+                            <option value="select">SELECT</option>
+                            <option vlaue="sleeper coach">SLEEPER COACH</option>
+                        <option vlaue="SITTING COACH">SITING COACH</option>
+                    
+                    </select>
+                </ul>
+               </form>
+               <button class="submit" type="button" onclick="trainB()">FIND TRAINS</button>
+               <div class="form-popup" id="bookTrain">
+                <h1>due to covid tains are currently not available</h1>
+               </div>
+            </section>
+        </div>
+        <img src="home.jpg" width="500" height="350" align="center">
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
